@@ -12,6 +12,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { HeadComponent } from './head/head.component';
 import { FootComponent } from './foot/foot.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SliderComponent } from './slider/slider.component';
+import { AvaComponent } from './ava/ava.component';
+import { BannerComponent } from './banner/banner.component';
+import { BlogListComponent } from './blog-list/blog-list.component';
 
 const appRoutes: Routes = [
   {path: 'home' ,component: HomeComponent},
@@ -31,6 +35,10 @@ const appRoutes: Routes = [
     HeadComponent,
     FootComponent,
     PageNotFoundComponent,
+    SliderComponent,
+    AvaComponent,
+    BannerComponent,
+    BlogListComponent,
   ],
   imports: [
     BrowserModule,

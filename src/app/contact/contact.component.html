@@ -1,14 +1,10 @@
-<app-head></app-head>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="page-header flex justify-content-center align-items-center" style="background-image: url('assets/images/contact-bg.jpg')" >
-                <h1>Contact me or just say HI</h1>
-            </div><!-- .page-header -->
-        </div><!-- .col -->
-    </div><!-- .row -->
-</div><!-- .hero-section -->
-
+<div class="outer-container">
+    <app-head></app-head>
+    <div class="container-fluid">
+        <app-banner [title]="title" [background]="background"></app-banner>
+        <app-ava></app-ava>
+    </div>
+</div>
 <div class="container single-page contact-page">
     <div class="row">
         <div class="col-12 col-lg-9">
@@ -26,9 +22,12 @@
 
                 <div class="entry-content">
                     <p>
-                        Sau khi đọc được những blog trong trang web của tôi, chắc các bạn cũng hiểu được phần nào về còn người
-                        của tôi. Các bài viết đều dựa trên những quan điểm của cá nhân và kinh nghiệm của bản thân trong quãng
-                        thời gian đi học cũng như đi thực tập bên ngoài. Nếu có điều gì thắc mắc hay liên hệ thì hãy phản hồi 
+                        Sau khi đọc được những blog trong trang web của tôi, chắc các bạn cũng hiểu được phần nào về
+                        còn người
+                        của tôi. Các bài viết đều dựa trên những quan điểm của cá nhân và kinh nghiệm của bản thân
+                        trong quãng
+                        thời gian đi học cũng như đi thực tập bên ngoài. Nếu có điều gì thắc mắc hay liên hệ thì hãy
+                        phản hồi
                         lại cho mình nhé :D !
                     </p>
                 </div><!-- .entry-content -->
