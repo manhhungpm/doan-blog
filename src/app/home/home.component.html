@@ -8,13 +8,13 @@
 <div class="container single-page">
     <div class="row">
         <div class="col-12 col-lg-9">
-            <div class="content-wrap">
+            <div class="content-wrap" *ngFor="let blog of blogs">
                 <header class="entry-header">
                     <div class="posted-date">
-                        January 30, 2018
+                        {{blog.date}}
                     </div><!-- .posted-date -->
 
-                    <h2 class="entry-title">Quang cảnh trên cao của Fukuyama như thế nào?</h2>
+                    <h2 class="entry-title">{{blog.title}}</h2>
 
                     <div class="tags-links">
                         <a href="#">#winter</a>
@@ -29,10 +29,7 @@
                 </figure><!-- .featured-image -->
 
                 <div class="entry-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis,
-                        volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet
-                        laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque
-                        in porttitor magna, a imperdiet est. </p>
+                    <p>{{blog.content}}</p>
                 </div><!-- .entry-content -->
 
                 <footer class="entry-footer flex flex-column flex-lg-row justify-content-between align-content-start align-lg-items-center">
@@ -43,7 +40,7 @@
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     </ul><!-- .post-share -->
 
-                    <a class="read-more order-2" href="#">Đọc thêm</a>
+                    <a class="read-more order-2" href="#" [routerLink]="['/blog-detail',blog.blogId]">Đọc thêm</a>
 
                     <div class="comments-count order-1 order-lg-3">
                         <a href="#">2 bình luận</a>
@@ -67,10 +64,7 @@
                 <div class="about-me">
                     <h2>Chào mừng bạn đến với Blog của mình</h2>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis,
-                        volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse sit amet
-                        laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque
-                        in porttitor magna.</p>
+                    <p>ssssssssssssssss.</p>
                 </div><!-- .about-me -->
 
                 <div class="recent-posts">
