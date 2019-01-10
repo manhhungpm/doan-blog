@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService,Blog} from '../data.service'
 import {Router, ActivatedRoute} from '@angular/router';
-import { from } from 'rxjs';
+
 @Component({
   selector: 'app-blog-detail',
   templateUrl: './blog-detail.component.html',
@@ -10,6 +10,9 @@ import { from } from 'rxjs';
 export class BlogDetailComponent implements OnInit {
   id=0;
   b;
+  date="";
+  title="";
+  content="";
   constructor(
     private dataService: DataService,
     private route:ActivatedRoute,
@@ -21,7 +24,7 @@ export class BlogDetailComponent implements OnInit {
     let blogs;
     this.dataService.getBlogList().subscribe((data:Array<Blog>)=>{
       blogs = data;
-      this.b = data.find(obj =>obj.blogId == this.id);
+      this.b = data.find(obj => obj.blogId == this.id);
     })
   }
 

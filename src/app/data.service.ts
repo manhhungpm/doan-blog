@@ -7,6 +7,7 @@ export interface Blog{
   title:string;
   content:string;
   date:string;
+  imageUrl: string;
 }
 
 @Injectable({
