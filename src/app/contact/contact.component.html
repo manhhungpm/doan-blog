@@ -30,6 +30,17 @@
                         phản hồi
                         lại cho mình nhé :D !
                     </p>
+                    <br>
+                    <br>
+                    <p>
+                        <i class="fa fa-map"></i> 16 Trần Quốc Toản, Hoàn Kiếm, Hà Nội
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope-square"></i> hungnm.nuce60@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i> 0854204728
+                    </p>
                 </div><!-- .entry-content -->
 
                 <div class="contact-page-social">
@@ -41,10 +52,10 @@
                     </ul>
                 </div><!-- .header-bar-social -->
 
-                <form class="contact-form">
-                    <input type="text" placeholder="Tên">
-                    <input type="email" placeholder="Email">
-                    <textarea rows="18" cols="6" placeholder="Lời nhắn"></textarea>
+                <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit">
+                    <input type="text" placeholder="Tên" formControlName="name" >
+                    <input type="email" placeholder="Email" formControlName="email">
+                    <textarea rows="18" cols="6" placeholder="Lời nhắn" formControlName="text"></textarea>
                     <input type="submit" value="Gửi đi">
                 </form><!-- .contact-form -->
             </div><!-- .content-wrap -->
@@ -60,16 +71,14 @@
 
                         <header class="entry-header">
                             <div class="posted-date">
-                                January 30, 2018
+                                May 3, 2018
                             </div><!-- .entry-header -->
 
-                            <h3><a href="#">My fall in love story</a></h3>
+                            <h3><a href="#">Cuộc thi khởi nghiệp của CLB mạng hệ thống</a></h3>
 
                             <div class="tags-links">
-                                <a href="#">#winter</a>
-                                <a href="#">#love</a>
-                                <a href="#">#snow</a>
-                                <a href="#">#january</a>
+                                <a href="#">#nuce</a>
+                                <a href="#">#ktht</a>
                             </div><!-- .tags-links -->
                         </header><!-- .entry-header -->
                     </div><!-- .recent-post-wrap -->
@@ -81,16 +90,16 @@
 
                         <header class="entry-header">
                             <div class="posted-date">
-                                January 30, 2018
+                                November 20, 2018
                             </div><!-- .entry-header -->
 
-                            <h3><a href="#">My fall in love story</a></h3>
+                            <h3><a href="#">Đội dự thi phần mềm nguồn mở</a></h3>
 
                             <div class="tags-links">
-                                <a href="#">#winter</a>
-                                <a href="#">#love</a>
-                                <a href="#">#snow</a>
-                                <a href="#">#january</a>
+                                <a href="#">#olp</a>
+                                <a href="#">#iot</a>
+                                <a href="#">#ptit</a>
+                                <a href="#">#xanh</a>
                             </div><!-- .tags-links -->
                         </header><!-- .entry-header -->
                     </div><!-- .recent-post-wrap -->

@@ -23,8 +23,8 @@
           </div><!-- .header-bar-social -->
 
           <div class="header-bar-search d-none d-md-block">
-            <form>
-              <input type="search" placeholder="Search" formControlName="keyword">
+            <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+              <input type="search" placeholder="Search" formControlName="keyword" formControlName="keyword">
             </form>
           </div><!-- .header-bar-search -->
         </div><!-- .col -->
@@ -66,9 +66,9 @@
           </div><!-- .header-bar-social -->
 
           <div class="header-bar-search d-md-none">
-            <form>
+            <!-- <form>
               <input type="search" placeholder="Search">
-            </form>
+            </form> -->
           </div><!-- .header-bar-search -->
         </nav>
       </div>

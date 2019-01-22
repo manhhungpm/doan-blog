@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import * as $ from 'jquery';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { SliderComponent } from './slider/slider.component';
 import { AvaComponent } from './ava/ava.component';
 import { BannerComponent } from './banner/banner.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: 'home' ,component: HomeComponent},
@@ -45,6 +48,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes,{enableTracing: true}),
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

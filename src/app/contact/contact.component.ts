@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
+import {FormBuilder} from '@angular/forms';
 
 @Component({
     selector: 'app-contact',
@@ -8,10 +9,18 @@ import Swiper from 'swiper';
 })
 export class ContactComponent implements OnInit {
 
-    constructor() { }
+    contactForm = this.fb.group({
+        name:[''],
+        email:[''],
+        text:[''],
+    });
+
+    constructor(
+        private fb: FormBuilder
+    ) {}
 
     ngOnInit() {
-
+    
     }
     title = "Contact";
     background = " url('assets/images/contact-bg.jpg')";
@@ -42,5 +51,7 @@ export class ContactComponent implements OnInit {
             },
         });
     };
+
+    onSubmit(){}
 
 }
